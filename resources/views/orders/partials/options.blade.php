@@ -12,4 +12,5 @@
     <a href="{{ route('orders.payments.pse.create', $order) }}">intentarlo de nuevo</a>
 @elseif($order->isPending())
     La confirmación de el pago está pendiente,  Intenta más tarde
+    <br><small>los datos se refrescan cada 7 minutos</small>
 @endif
